@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Dropdown-list</title> 
+    <style> 
+        .user { 
+            border-left: none; 
+            border-right: none; 
+            border-top: none; 
+            outline: none; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <form> 
+        <dl> 
+            <dt>User Name</dt> 
+            <dd> 
+                <input type="text" class="user" placeholder="User Name"> 
+            </dd> 
+            <dt>Courses</dt> 
+            <dd> 
+                <input type="checkbox" checked value="HTML" name="Course"> <label for="Course"> 
+HTML </label> 
+                <br><br> 
+                <input type="checkbox" checked value="CSS" name="Course"> <label for="Course"> CSS 
+</label> 
+            </dd> 
+            <dt>Departure</dt> 
+            <dd> 
+                <select name="Airport"> 
+                    <option>Select City</option> 
+                    <optgroup label="International"> 
+                        <option disabled>London</option> 
+                        <option>Newyork</option> 
+                    </optgroup> 
+                    <optgroup label="Domestic"> 
+                        <option value="RGI">Hyderabad</option> 
+                        <option selected value="BOM">Mumbai</option> 
+                    </optgroup> 
+                </select> 
+            </dd> 
+        </dl> 
+        <button>Submit</button> 
+    </form> 
+</body> 
+</html>
